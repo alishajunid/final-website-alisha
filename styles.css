@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:#000;
   } 
   
   body {
@@ -37,13 +38,13 @@
   }
   
   nav ul li a:hover {
-    color: purple;
+    color: palevioletred;
     transition: .4s;
   }
   
   .toptext {
     text-align: center;
-    padding-bottom: 10px;
+
   }
   main {
    text-align: center;
@@ -86,9 +87,22 @@
    #carp-poster {
     
   } 
+
+.project-box3 {
+    position: relative;
+    overflow: hidden;
+}
+
 .project-box3 img[alt="Main Carp Poster"] {
     width: 600px;
     height: 400px;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.project-box3:hover img[alt="Main Carp Poster"] {
+    transform: scale(1.1); /* Scale the image on hover */
+    filter: grayscale(0%);
 }
 
 .project-box3 img[alt="Layout 1"],
@@ -98,7 +112,13 @@
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 30px; /* Adjust the margin to position them higher */
+    /* transition: transform 0.3s ease; */
 }
+
+/* .project-box3:hover img[alt="Layout 1"],
+.project-box3:hover img[alt="Layout 3"] {
+    transform: scale(1.1);
+} */
 
 
  
