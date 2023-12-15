@@ -12,21 +12,23 @@ body {
   color: #fff;
   text-align: center;
   background-color:#000;
-  /* background-image:url(dark\ blue\ background.jpg);
-  background-size: 100%;
-  background-attachment: fixed;  */
+
 
 }
 
 .section1 {
-  margin-right: ;
+  margin-right: auto ;
 }
 
 h1{
-  font-family: "mixta-sharp-alt", serif;
-font-weight: 700;
-font-style: normal;
+  /* font-family: "komet", sans-serif;
+  font-weight: 700;
+  font-style: normal; */
 color: white;
+font-family: "abolition", sans-serif;
+font-weight: 500;
+font-size: xxx-large;
+font-style: normal;
 
 }
 
@@ -35,10 +37,15 @@ color: white;
 }
 
 h2{
-  font-family: "mixta-sharp-alt", serif;
+  /* font-family: "mixta-sharp-alt", serif;
 font-weight: 700;
-font-style: normal;
+font-style: normal; */
 color: white;
+font-family: "abolition", sans-serif;
+font-weight: 500;
+font-size: xx-large;
+font-style: normal;
+
 
 }
 
@@ -57,13 +64,19 @@ color: white;
 
 
 h4{
-  font-family: "mixta-sharp-alt", serif;
-font-weight: 700;
-font-style: normal;
+ 
+font-weight: 400;
 color: white;
 
 }
 
+#heading4 {
+ 
+font-weight: 700;
+color: black;
+text-align: center;
+
+}
 p {
   text-align: justify;
   color: white;
@@ -71,17 +84,46 @@ p {
 
 #one {
   color: black;
+  text-align: justify;
 }
+
 
 
 header {
   background-color: black;
   color: #fff;
   padding: 1rem;
-  /* font-family: "mixta-pro", serif;
-font-weight: 400;
-font-style: normal; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
 }
+
+ .logo {
+  margin-right: 20px; /* Adjust the spacing between logo and navigation */
+ }
+
+.logo img {
+  max-width: 100px; 
+  /* Set a maximum width for the logo  */
+ /* Add any other styles for your logo  */
+ }
+
+.push {
+  margin-left: 20px;
+} 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-flex; /* Display navigation items horizontally */
+  margin-right: 50px; /* Adjust the spacing between navigation items */
+
+}
+
 
 nav ul {
   list-style: none;
@@ -91,7 +133,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 nav ul li a{
@@ -103,6 +145,8 @@ nav ul li a:hover {
   color: palevioletred;
   transition: .4s;
 }
+
+
 
 .toptext {
   text-align: center;
@@ -150,10 +194,6 @@ footer {
  #carp-poster {
   align-items: center;
   background-color: whitesmoke;
-  /* background-image:url(abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
-  background-size: 100%;
-  background-attachment: fixed; 
-  background-repeat: round; */
 
 } 
 
@@ -170,9 +210,8 @@ footer {
 
 .carppostertextbox {
 padding: 40px;
-  margin-left: 40px;
-  margin-right: 40px; 
-  margin: 40px;
+  margin-left: 60px;
+  margin-right: 60px; 
 }
 
 .project-box3 {
@@ -192,13 +231,9 @@ margin-left: 5px;
 
 }
 
-.project-box3:hover img[alt="Main Carp Poster"] {
-  transform: scale(1); /* Scale the image on hover */
-  filter: grayscale(0%);
-}
 
 .project-box3 img[alt="Layout 1"] {
-width: 300px;
+width: 250px;
 height: 350px;
 margin-right: 10px;
 margin-left: 10px;
@@ -209,22 +244,14 @@ margin-top: 10px;
 
 
 .project-box3 img[alt="Layout 3"] {
-  width: 300px;
+  width: 250px;
   height: 350px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 30px; 
   margin-top: 10px;
-  /* Adjust the margin to position them higher */
-  /* transition: transform 0.3s ease; */
+  
 }
-
-/* .project-box3:hover img[alt="Layout 1"],
-.project-box3:hover img[alt="Layout 3"] {
-  transform: scale(1.1);
-} */
-
-
 
 
 /* For screens larger than 768px */
@@ -266,13 +293,11 @@ margin-top: 10px;
 
 .postertextbox {
   /* Adjust space between image and text */
-  /* margin-bottom: 30px; */
   padding: 40px;
   margin-top: 10px;
   margin-left: 40px;
   margin-right: 40px; 
   margin-bottom: 40px;
-  /* margin: 40px; */
 }
 
 
@@ -282,84 +307,10 @@ max-height: 100%;
 width: 400px;
 height: 400px; 
 align-items:start;
-
+border: 3px solid white;
 }
 
 
-
-/* .projects-container {
-  width: 100%; /* Full width for each project box */
-  /* display: flex;
-  align-content: normal;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 15px 25px 15px 15px;
-}
-
-.projects-container .postertextbox {
-  flex: 1;
-  padding: 10px;
-}
-
-.postertextbox {
- /* display: flex;*/
-  /* flex-wrap: wrap;
-  text-align: left;
-  border: 2px white;
-} */ 
-
-
-/* .projects-container {
-width: 100%; /* Full width for each project box */
-/* display: flex;
-align-content: normal;
-justify-content: flex-start;
-flex-wrap: wrap;
-padding: 15px 25px 15px 15px;
-}
-
-.projects-container .postertextbox {
-flex: 1;
-padding: 10px;
-}
-
-.postertextbox {
-/* display: flex;*/
-/* flex-wrap: wrap;
-text-align: left;
-border: 2px white;
-} */ 
-
-
-
-
-
-
-
-/* .project-box3 img {
-  max-width: 100%;
-    max-height: 100%;
-    width: 300px;
-    height: 300px; 
-    align-items:start;
-} */
-
-/* .project-box3 img[alt="Main Carp Poster"] {
-  width: 600px;
-  height: 400px;
-}
-
-.project-box3 img[alt="Layout 1"],
-.project-box3 img[alt="Layout 3"] {
-  width: 300px;
-  height: 200px;
-} */
-
-/* .project-box3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 
 
@@ -395,9 +346,6 @@ border: 2px white;
 
 
  #coding-worksheets {
-  /* background-image:url(abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
-  background-size: 100%;
-  background-attachment: fixed;  */
   background-color: whitesmoke;
   color: #000;
 
@@ -469,7 +417,7 @@ width: 10px;
 height: 10px;
 }
 .slides::-webkit-scrollbar-thumb {
-background:#ccc;
+background:whitesmoke;
 border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
