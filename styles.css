@@ -377,6 +377,11 @@ border: 3px solid white;
   /* margin: 40px; */
 }
 
+.video {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 
 
  
